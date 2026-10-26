@@ -1,9 +1,10 @@
 body { max-width: 700px; margin: 50px auto; padding: 0 20px; background: #f4f7f5; color: #202923; font: 16px Arial, sans-serif; }
 main { padding: 28px; background: white; border-radius: 12px; }
 h1 { color: #176344; }
-form { display: flex; align-items: center; flex-wrap: wrap; gap: 10px; }
-input, button { padding: 10px; font: inherit; }
-input { width: 70px; }
+input, button { display: block; margin-top: 12px; padding: 10px; font: inherit; }
+input { width: min(100%, 280px); }
 button { border: 0; border-radius: 6px; background: #176344; color: white; cursor: pointer; }
-#message { margin-top: 22px; }
-li { margin: 12px 0; padding: 14px; background: #eef5f0; border-radius: 8px; }
+#alerts-display { margin-top: 20px; }
+#alerts-display li { margin: 8px 0; }
+#error-message { margin-top: 16px; color: #b3261e; }
+.hidden { display: none; }

@@ -3,21 +3,18 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>US Weather Alerts</title>
+  <title>Weather Alerts App</title>
   <link rel="stylesheet" href="styles.css">
-  <script src="app.js" defer></script>
+  <script src="index.js" defer></script>
 </head>
 <body>
   <main>
-    <h1>US Weather Alerts</h1>
-    <p>Enter a US state code, such as CA or NY.</p>
-    <form id="search-form">
-      <label for="state">State code</label>
-      <input id="state" maxlength="2" placeholder="CA" required>
-      <button>Find alerts</button>
-    </form>
-    <p id="message" role="status">Search for active alerts.</p>
-    <ul id="alerts"></ul>
+    <h1>Weather Alerts App</h1>
+    <label for="state-input">State abbreviation</label>
+    <input id="state-input" type="text" placeholder="Enter state abbreviation" maxlength="2">
+    <button id="fetch-alerts" type="button">Get Weather Alerts</button>
+    <div id="error-message" class="hidden" role="alert"></div>
+    <div id="alerts-display" aria-live="polite"></div>
   </main>
 </body>
 </html>

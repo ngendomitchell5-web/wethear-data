@@ -1,7 +1,5 @@
-# US Weather Alerts
+# Weather Alerts App
 
-Enter a state code (for example, CA) to see active National Weather Service alerts.
+Enter a two-letter US state abbreviation to see current National Weather Service alerts.
 
-Run `python3 -m http.server 8000` in this folder, then open `http://localhost:8000`.
-
-This small version handles request errors but does not validate state codes.
+Run `npm install`, then `npm test` to run the lab tests. To open the app, run `python3 -m http.server 8000` in this folder and visit `http://localhost:8000`.
